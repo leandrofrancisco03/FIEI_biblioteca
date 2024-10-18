@@ -1,13 +1,16 @@
 {
   "name": "biblioteca-fiei",
   "private": true,
+  "homepage": "http://leandrofrancisco03.github.io/FIEI_biblioteca",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.7",
